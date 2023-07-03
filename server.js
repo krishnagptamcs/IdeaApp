@@ -2,6 +2,8 @@ const express = require("express");
 
 const app = express();
 
-app.listen(3333, ()=>{
-    console.log('Server is running on port 3333')
-})
+const serverConfig = require("./configs/server.config")
+
+app.listen(serverConfig.PORT, ()=>{
+    console.log(`Server is running on port ${serverConfig.PORT}`)
+}) 
