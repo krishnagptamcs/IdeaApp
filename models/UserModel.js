@@ -24,8 +24,8 @@ const UserSchema = new mongoose.Schema({
     },
     userType:{
         type:String,
-        default:'CUSTOMER',
-        enum:['ADMIN','CUSTOMER'], // dollection of possible value of a field 
+        default:'Customer',
+        enum:['Admin', 'Customer'], // dollection of possible value of a field 
         require:true
     }
 },{timestamps:true})
